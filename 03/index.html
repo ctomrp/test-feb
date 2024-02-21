@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+        <form
+        action="#"
+        class="form"
+        id="signupForm"
+        onsubmit="return validateForm()"
+        >
+        <div>
+          <div class="title">Sign Up</div>
+          Want to sign up fill out this form!
+        </div>
+        <div class="hr"></div>
+        <label for="name" class="label">First Name</label>
+        <input type="text" name="name" id="name" class="inputText" />
+        <div id="nameError" class="error"></div>
+        <label for="lastName" class="label">Last Name</label>
+        <input type="text" name="lastName" id="lastName" class="inputText" />
+        <div id="lastNameError" class="error"></div>
+        <label for="password" class="label">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          class="inputText"
+        />
+        <div id="passwordError" class="error"></div>
+        <label for="accept"
+          ><input
+            type="checkbox"
+            name="accept"
+            id="accept"
+            class="check"
+          />&nbsp;I accept the terms of use</label
+        >
+        <div id="acceptError" class="error"></div>
+        <button type="submit" class="btn">Sign Up</button>
+      </form>
+    </div>
+  </body>
+</html>
